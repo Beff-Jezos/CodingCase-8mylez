@@ -1,0 +1,45 @@
+{
+  "name": "CodingCase",
+  "author": "Philipp Link",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@CodingCase"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/coding-case.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "blocks": {
+      "feedbackColor": {
+        "label": {
+          "en-GB": "Feedback colours",
+          "de-DE": "Feedback-Farben"
+        }
+      }
+    },
+    "fields": {
+      "feedback-color": {
+        "label": {
+          "en-GB": "Feedback colour",
+          "de-DE": "Feedback Farbe"
+        },
+        "type": "color",
+        "value": "#888888",
+        "editable": true,
+        "block": "feedbackColor",
+        "order": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{% sw_extends '@storefront/storefront/component/product/card/action.html.twig' %}
+
+
+    {% block page_product_detail_product_buy_button %}
+        <div class="d-grid">
+            <button id="btnFeedback" class="btn btn-buy"
+                        title="{{ "listing.boxAddProduct"|trans|striptags }}"
+                        data-add-to-cart-options='{
+                            "btnText" : ""listing.boxAddProduct"|trans|sw_sanitize"
+                        }'
+                        >
+                        {{ "listing.boxAddProduct"|trans|sw_sanitize }}
+            </button>
+        </div>
+    {% endblock %}
